@@ -1,0 +1,24 @@
+{
+  "name": "ligle-model-member",
+  "version": "0.3.0",
+  "description": "member",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.hijack.moe:crackhopper/ligle-model-member.git"
+  },
+  "keywords": [
+    "member"
+  ],
+  "author": "crackhopper",
+  "license": "ligle",
+  "dependencies": {
+    "ligle-engine":"~0.3.0",
+    "moment": "^2.10.6",
+    "ms": "^0.7.1",
+    "uuid": "^2.0.1"
+  }
+}
