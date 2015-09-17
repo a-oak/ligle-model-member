@@ -2,9 +2,9 @@
   "name": "ligle-model-member",
   "version": "0.3.0",
   "description": "member",
-  "main": "index.js",
+  "main": "src/member.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "node --debug --harmony-generators ./node_modules/.bin/grunt"
   },
   "repository": {
     "type": "git",
@@ -15,10 +15,26 @@
   ],
   "author": "crackhopper",
   "license": "ligle",
+  "peerDependencies": {
+    "ligle-util": "~0.3.1",
+    "ligle-db": "~0.3.0",
+    "ligle-model": "~0.3.0",
+    "ligle-midware": "~0.3.0",
+    "ligle-engine": "~0.3.0"
+  },
   "dependencies": {
-    "ligle-engine":"~0.3.0",
     "moment": "^2.10.6",
     "ms": "^0.7.1",
     "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "grunt": "^0.4.5",
+    "grunt-blanket": "0.0.8",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.3.2"
   }
 }
