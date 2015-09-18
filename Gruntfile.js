@@ -14,6 +14,15 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc',
       },
     },
+    watch: {
+      scripts: {
+        files: '<%= jshint.files %>',
+        tasks: ['jshint','jscs'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
     jscs: {
       src: '<%= jshint.files %>',
       options: {
@@ -56,6 +65,7 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.registerTask('default',
-                     ['jshint','jscs','clean', 'blanket', 'copy', 'mochaTest']);
+  grunt.registerTask(
+    'default',
+    ['jshint','jscs','clean', 'blanket', 'copy', 'mochaTest']);
 };
