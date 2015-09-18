@@ -1,21 +1,21 @@
 var expect = require('chai').expect;
 var should = require('chai').should();
 var ligle = require('ligle-engine')({
-  loggerLevel:"INFO",
+  loggerLevel:'INFO',
   db:{
     name:'ligle-test',
     host: '127.0.0.1',
-    port:27017
-  }
+    port:27017,
+  },
 });
 
 
 /// 下面两个变量，辅助测试延迟相应。
 var delay = 100;// test must be delayed to avoid conflict
-var n_test = 1; // used for delay
+var nTest = 1; // used for delay
 
 
-require('../lib/member.js')(ligle);
+require('../lib/index.js')(ligle);
 describe('ligle-model',function(){
   var Model = ligle.model.Member;
   before(function(done){

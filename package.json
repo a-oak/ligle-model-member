@@ -2,7 +2,7 @@
   "name": "ligle-model-member",
   "version": "0.3.0",
   "description": "member",
-  "main": "src/member.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "node --debug --harmony-generators ./node_modules/.bin/grunt"
   },
@@ -34,6 +34,9 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jscs": "^2.1.0",
     "grunt-mocha-test": "^0.12.7",
     "mocha": "^2.3.2"
   }
