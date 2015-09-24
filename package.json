@@ -1,6 +1,6 @@
 {
   "name": "ligle-model-member",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "member",
   "main": "src/index.js",
   "scripts": {
