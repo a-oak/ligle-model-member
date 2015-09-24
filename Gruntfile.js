@@ -6,6 +6,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-blanket');
   grunt.loadNpmTasks('grunt-jscs');
+  grunt.loadNpmTasks('grunt-jsdoc');
 
   grunt.initConfig({
     jshint: {
@@ -63,9 +64,18 @@ module.exports = function(grunt) {
         src: ['coverage/test/**/*.js'],
       },
     },
+    jsdoc: {
+      dist: {
+        src: ['lib/*.js', 'test/*.js'],
+        options: {
+          destination: 'doc',
+        },
+      },
+    },
   });
 
   grunt.registerTask(
     'default',
     ['jshint','jscs','clean', 'blanket', 'copy', 'mochaTest']);
+  grunt.registerTask('doc',['jsdoc']);
 };

@@ -238,3 +238,5 @@ public/images/upload/*/*.bmp
 *.log.*
 
 coverage*
+
+doc*
