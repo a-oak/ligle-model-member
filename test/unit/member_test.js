@@ -7,6 +7,9 @@ var ligle = require('ligle-engine')({
     host: '127.0.0.1',
     port:27017,
   },
+  util:{
+    loggerLevel:'INFO',
+  },
 });
 
 
@@ -14,8 +17,9 @@ var ligle = require('ligle-engine')({
 var delay = 100;// test must be delayed to avoid conflict
 var nTest = 1; // used for delay
 
+var requireHelper = require('../require-helper');
+requireHelper('index')(ligle,{loggerLevel:'INFO'});
 
-require('../lib/index.js')(ligle);
 describe('ligle-model',function(){
   var Model = ligle.model.Member;
   before(function(done){
