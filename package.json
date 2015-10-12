@@ -6,9 +6,10 @@
   "scripts": {
     "test": "grunt test"
   },
+  "homepage":"https://github.com/a-oak/ligle-model-member.git",
   "repository": {
     "type": "git",
-    "url": "git@git.hijack.moe:crackhopper/ligle-model-member.git"
+    "url": "https://github.com/a-oak/ligle-model-member.git"
   },
   "keywords": [
     "member"
